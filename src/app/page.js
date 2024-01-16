@@ -1,4 +1,7 @@
-import Image from 'next/image'
+import Image from 'next/image';
+import React from 'react';
+import HelloWorld from './contents';
+import Button from './button';
 
 export default function Home() {
   return (
@@ -38,6 +41,9 @@ export default function Home() {
           priority
         />
       </div>
+      <HelloWorld />
+      <Button color="orange" text="Please Click me!"/>
+
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
@@ -111,3 +117,4 @@ export default function Home() {
     </main>
   )
 }
+
